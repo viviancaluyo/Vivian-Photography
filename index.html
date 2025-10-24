@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Vivian Photography</title>
+  <link rel="icon" type="image/x-icon" href="logo.png">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <input type="radio" id="tab-home" name="tab" checked hidden>
+  <input type="radio" id="tab-services" name="tab" hidden>
+  <input type="radio" id="tab-why" name="tab" hidden>
+  <input type="radio" id="tab-feedback" name="tab" hidden>
+  <input type="radio" id="tab-contact" name="tab" hidden>
+
+  <header class="site-header">
+    <div class="brand">
+       <img src="Logo.png" viewBox="0 0 120 40" width="80" height="80" aria-hidden="true">
+       <text x="72" y="46" font-family="Segoe UI, Roboto, sans-serif" font-size="15" fill="#111827"><h2>𝐕𝐢𝐯𝐢𝐚𝐧 𝐏𝐡𝐨𝐭𝐨𝐠𝐫𝐚𝐩𝐡𝐲</h2></text>
+      <svg class="logo" viewBox="0 0 120 40" width="120" height="40" aria-hidden="true"></svg>
+    </div>
+
+
+    <input id="nav-toggle" type="checkbox" hidden>
+    <label for="nav-toggle" class="hamburger" aria-hidden="true">
+      <span></span><span></span><span></span>
+    </label>
+
+    
+    <nav class="main-nav" role="navigation">
+      <label class="nav-item" for="tab-home" tabindex="0">Home</label>
+      <label class="nav-item" for="tab-services" tabindex="0">Services</label>
+      <label class="nav-item" for="tab-why" tabindex="0">Why Choose Us?</label>
+      <label class="nav-item" for="tab-feedback" tabindex="0">Feedback</label>
+      <label class="nav-item cta" for="tab-contact" tabindex="0">Contact Us</label>
+    </nav>
+  </header>
+
+  <main class="container">
+    
+    <section id="home" class="panel panel--home" aria-labelledby="home-title">
+      <div class="hero">
+        <h1 id="home-title">Welcome!</h1>
+        <p class="lead"><b>Capture your beautiful moments through our lens!</b></p>
+        <div class="hero-buttons">
+          <label for="tab-services" class="btn">Choose Services</label>
+          <label for="tab-contact" class="btn btn--ghost">Book Now</label>
+        </div>
+      </div>
+      <div class="grid-samples">
+        <div class="sample sample--1">Christening</div>
+        <div class="sample sample--2">Wedding</div>
+        <div class="sample sample--3">Graduation</div>
+      </div>
+    </section>
+
+    
+    <section id="services" class="panel panel--services" aria-labelledby="services-title">
+      <center><h1 id="services-title">Services</h1></center>
+      <div class="cards">
+        <article class="card">
+          <div class="card-thumb">Christening</div>
+          <img src="Christening.jpg" alt="Portrait" height="155" width="300">
+          <p>Capture the purity and joy of your baby's christening day. We will preserve every precious memory.</p>
+          <button class="btn">Book yours now!</button>
+        </article>
+
+        <article class="card">
+          <div class="card-thumb">Wedding</div>
+          <img src="Wedding.jpg" alt="Portrait" height="155" width="300">
+          <p>We don't just take pictures. We create legacies.  Let's capture the start of your forever.</p>
+          <button class="btn">Book yours now!</button>
+        </article>
+
+        <article class="card">
+          <div class="card-thumb">Graduation</div>
+          <img src="Graduation.jpg" alt="Portrait" height="155" width="300">
+          <p>One chapter closes, a new adventure begins. Let's capture the beginning. Book your graduation photoshoot today.</p>
+          <button class="btn">Book yours now!</button>
+        </article>
+      </div>
+    </section>
+
+    
+    <section id="why" class="panel panel--why" aria-labelledby="why-title">
+      <center><h1 id="why-title">Why Choose Us?</h1></center>
+      <ul class="why-list">
+        <li>
+          <h3>Fast Delivery</h3>
+          <p>Get digital proofs within 24-72 hours depending on package.</p>
+        </li>
+        <li>
+          <h3>Professional Editing</h3>
+          <p>Color grading and retouching tuned to your style.</p>
+        </li>
+        <li>
+          <h3>Flexible Packages</h3>
+          <p>Pay per hour or full day packages we adapt to your budget.</p>
+        </li>
+      </ul>
+    </section>
+
+  
+    <section id="feedback" class="panel panel--feedback" aria-labelledby="feedback-title">
+      <h1 id="feedback-title">Client Feedback</h1>
+      <div class="feedback-list">
+        <blockquote class="feedback">
+          <p>"Vivian made our wedding day effortless and the photos are just magical!"</p>
+          <cite>— Ana R.</cite>
+        </blockquote>
+
+        <blockquote class="feedback">
+          <p>"Fast, friendly, and professional — highly recommended."</p>
+          <cite>— Marco G.</cite>
+        </blockquote>
+
+        <details class="leave-feedback">
+          <summary>Leave Your Feedback</summary>
+          <form class="feedback-form" method="post" action="mailto:vivianphotography12@gmail.com" enctype="text/plain">
+            <label>
+              Name
+              <input name="name" required>
+            </label>
+            <label>
+              Feedback
+              <textarea name="message" rows="1" required></textarea>
+            </label>
+            <div class="form-actions">
+              <button type="submit" class="btn">Send Feedback</button>
+              <button type="reset" class="btn btn--ghost">Clear</button>
+            </div>
+          </form>
+        </details>
+      </div>
+    </section>
+
+    <section id="contact" class="panel panel--contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact Us</h2>
+      <div class="contact-wrap">
+        <form class="contact-form" action="mailto:vivianphotography12@gmail.com" method="post" enctype="text/plain">
+          <label>
+            Full name
+            <input name="fullname" required>
+          </label>
+          <label>
+            Email
+            <input name="email" type="email" required>
+          </label>
+          <label>
+            Service interested
+            <select name="service">
+              <option>Christening</option>
+              <option>Wedding</option>
+              <option>Graduation</option>
+            </select>
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="7"></textarea>
+          </label>
+          <div class="form-actions">
+            <button type="submit" class="btn cta">Send Request</button>
+            <button type="reset" class="btn btn--ghost">Clear</button>
+          </div>
+        </form>
+
+        <aside class="contact-info">
+          <h3>Quick Info</h3>
+          <p><strong>Phone:</strong> +63 938 739 5216</p>
+          <p><strong>Email:</strong>vivianphotography12@gmail.com</p>
+          <p><strong>Delivery:</strong> Free within city limits prints available same day (conditions apply).</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Vivian Photography — All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.querySelectorAll('.nav-item, .btn, label[for^="tab"]').forEach(el=>{
+      el.addEventListener('keydown', e=>{
+        if(e.key === 'Enter' || e.key === ' ') el.click();
+      });
+    });
+  </script>
+</body>
+</html>
